@@ -1,0 +1,217 @@
+:root {
+  --bs-font-sans-serif: 'Rubik', sans-serif;
+}
+
+/* body {
+  background-image: url("/img/bg-img.jpg");
+  background-color: rgb(243, 243, 243); /* Optional: uncomment if you want a background color fallback */
+/* }  */
+
+
+
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.clearHeader {
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.stickyHeader {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 5;
+}
+
+header .d-flex {
+  padding: 0px 0;
+  /* Reduce the padding */
+}
+
+header .col-md-3 {
+  margin-bottom: 0;
+  /* Reduce the margin-bottom */
+}
+
+header img {
+  width: 60px;
+  /* Reduce the logo size */
+  height: 60px;
+  /* Reduce the logo size */
+}
+
+.PickUs-text {
+  font-size: 20px;
+  /* Adjust the font size as needed */
+}
+
+.story-text {
+  font-size: 10px;
+  /* Adjust the font size as needed */
+}
+
+/* Custom style for search box */
+input[type="search"] {
+  border: 2px solid #252932bd;
+  /* Change the border color as needed */
+  border-radius: 5px;
+  /* Optional: to make the corners rounded */
+}
+
+input[type="search"]::placeholder {
+  color: #aaa;
+  /* Change the placeholder color if needed */
+}
+
+.card-img-container {
+  height: 200px; /* Set your desired fixed height */
+  overflow: hidden;
+}
+
+.card-img-top {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+
+.custom-container {
+  /* Custom styles for container-like behavior */
+  padding: 0 15px; /* Adjust padding as needed */
+  max-width: 100%; /* Ensure it takes full width */
+  margin: 0 auto; /* Center the container */
+  background-color: #fff; /* Ensure background color */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+}
+/* Updated header styles to integrate with sticky functionality */
+header {
+  padding: 0 15px;
+  max-width: 100%;
+  margin: 0 auto; /* Adjust padding */
+  background-color: rgba(255, 255, 255, 0.8); /* Background color */
+}
+
+
+
+
+a {
+  color: var(--bs-dark);
+}
+
+/* Custom class for PickUs with extra bold and larger font size */
+.PickUs-text {
+  font-weight: bold;
+  font-size: 24px; /* Adjust the font size as needed */
+  line-height: 1.2; /* Adjust the line height as needed */
+}
+
+/* Custom class for "Where Every Recipe Tells a Story" with regular font weight and smaller font size */
+.story-text {
+  font-weight: normal;
+  font-size: 12px; /* Adjust the font size as needed */
+  line-height: 1; /* Adjust the line height as needed */
+  white-space: nowrap; /* Prevent line breaks within the text */
+}
+
+/* Index */
+#intro-example {
+  background-size: cover;
+  height: 400px;
+}
+
+/* Height for devices larger than 992px */
+@media (min-width: 992px) {
+  #intro-example {
+    height: 510px;
+  }
+}
+
+.hero-img {
+  background-image: url('/img/hero.jpg');
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-block-start: 10%;
+}
+
+/* Category */
+.category__link {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  transition: 250ms all;
+}
+
+.category__link:hover {
+  transform: scale(1.1);
+}
+
+.category__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 10px;
+  box-shadow: 0px 3px 6px rgba(0,0,0,.16);
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.category__img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.category__img--large {
+  height: 330px;
+}
+
+.submit{
+  background-color:rgb(241, 233, 233);
+}
+
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #f8ece4;
+  border-radius: 15px;
+  background-image: url('https://example.com/path-to-your-cooking-design.png'); /* Replace with actual image URL */
+  background-size: cover;
+  background-position: center;
+}
+.contact-section .text-content {
+  max-width: 50%;
+}
+.contact-section img {
+  max-width: 30%; /* Adjust this value as needed */
+  border-radius: 15px;
+}
+.contact-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.contact-section p {
+  font-size: 1.25rem;
+  margin-bottom: 1.5rem;
+}
